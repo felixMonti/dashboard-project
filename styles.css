@@ -63,7 +63,7 @@ html, body {
     border: 0px;
     height: 1.5rem;
     width: 95%;
-    background-color: rgb(244, 244, 244);
+    background-color: #ecfccb;
     border-radius: 100px;
     padding-left: 1rem; 
 }
@@ -185,7 +185,6 @@ html, body {
     grid-column: 2/3;
     grid-template-columns: 2fr 1fr;
     height: 80vh;
-    gap: 1rem;
     box-sizing: border-box;
 }
 
@@ -199,6 +198,7 @@ html, body {
     gap: 1rem;
     padding-top: 1rem;
     padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 .projects-title {
@@ -207,14 +207,12 @@ html, body {
 }
 
 .cards{
-    border: 1px solid blue;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 1rem;
 }
 
 .card{
-    border: 1px solid blue;
     display: grid;
     grid-template-columns: 1fr auto auto;
     grid-template-rows: 0fr 1fr 0fr;
@@ -271,4 +269,28 @@ html, body {
     background-color: #365314;
 }
 
+button {
+    background-color: #365314; /* Set the background color to red */
+    color: #f7fee7;          /* Set the text color to white for contrast */
+}
+
+button:hover {
+    background-color: #3f6212; /* Make the button darker on hover for feedback */
+}
+
+.header {
+    background-color: #f7fee7;
+    color: #1a2e05;
+}
+
+.main-content {
+    background-color: #ecfccb;
+}
+
+.card {
+    border-left: 8px solid #365314;
+    border-radius: 5px;
+    padding-left: 1rem;           
+    background-color: #f7fee7;
+}
 
