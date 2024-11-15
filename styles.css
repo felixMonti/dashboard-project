@@ -4,6 +4,7 @@ html, body {
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
+    height: 100%;
 }
 
 .profile-image-pressence{
@@ -30,11 +31,15 @@ html, body {
 }
 
 .container {
+    min-height: 100vh;
+    width: auto;
     border: 1px solid blue;
     display: grid;
     grid-template-columns: 1fr 4fr;
+    grid-template-rows: auto 1fr;
     gap: 4px;
 }
+
 
 .header {
     border: 1px solid blue;
@@ -108,8 +113,33 @@ html, body {
 .sidebar {
     border: 1px solid blue;
     grid-row: 1/3;
+    grid-column: 1/2;
     min-height: 100vh;
+    display: grid;
+    grid-template-rows: 0fr 1fr 1fr;
 }
+
+.title {
+    border: 1px solid blue;
+    display: grid;
+    grid-template-columns: 0fr 1fr;
+    gap: 20px;
+    padding-left: 20px ;
+    align-items: center;
+}
+
+.title p {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.logo {
+    height: 3rem;
+    width: auto;
+}
+
+
 
 .main-content {
     border: 1px solid blue;
