@@ -250,7 +250,6 @@ html, body {
 }
 
 .announcements {    
-    border: 1px solid red;
     margin: 0%;
     display: grid;
     grid-template-columns: 1fr;
@@ -276,6 +275,7 @@ html, body {
 
 .announcements p {
     margin: 0 0 0 0;
+    font-size: small;
 }
 
 .ann-top {
@@ -325,3 +325,32 @@ button:hover {
     background-color: #f7fee7;
 }
 
+.trending {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0fr 1fr;
+    padding-left: 1rem;  
+}
+
+.trending-container {
+    background-color: #f7fee7;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+}
+
+.trending h3 {
+    margin: 0;
+    padding-bottom: 1rem;
+}
+
+.trend {
+    display: grid;
+    grid-template-columns: 0fr 1fr;
+    align-items: center;
+    gap: 1rem;
+}
+
+.trend span {
+    font-weight: bold;
+}
