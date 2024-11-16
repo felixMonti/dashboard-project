@@ -189,8 +189,6 @@ html, body {
 }
 
 .projects {
-    border: 1px solid blue;
-
     height: 79;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -253,6 +251,7 @@ html, body {
 
 .announcements {    
     border: 1px solid red;
+    margin: 0%;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 0fr 1fr;
@@ -260,8 +259,40 @@ html, body {
     padding-right: 1rem;
 }
 
+.ann-container {
+    background-color: #f7fee7;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: .5rem;
+}
+
+.announcements h5 {
+    margin: 0;
+}
+
+.announcements p {
+    margin: 0 0 0 0;
+}
+
+.ann-top {
+    padding: 0;                  /* Remove all padding */
+    margin: 0;                   /* Remove any default margins */
+    border-bottom: 2px solid #ecfccb; /* Keep the border consistent */
+    box-sizing: border-box;      /* Include borders in element dimensions */
+}
 
 
+.ann-top,
+.ann-mid {
+    border-bottom: 2px solid #365314; 
+    margin: 0;                   
+    padding: 0.5rem 0;           
+    box-sizing: border-box;    
+}
 /* colors */
 
 .sidebar{
