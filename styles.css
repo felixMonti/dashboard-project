@@ -217,6 +217,7 @@ html, body {
     position: relative;
     gap: .1rem;
     padding: 1rem;
+    min-height: 10rem;
 }
 
 .card h5{
@@ -228,6 +229,7 @@ html, body {
 .card p {
     grid-row: 2;
     grid-column: 1/4;
+    font-size: small;
 }
 
 .card img {
